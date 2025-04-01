@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of Trapizoid " />
+  <meta name="description" content="Volume of Right Rectangular Pyramid" />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -27,33 +27,33 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of Trapizoid</span>
+        <span class="mdl-layout-title">Volume of Right Rectangular Pyramid</span>
       </div>
     </header>
     <h2 class="formula">Formula</h2>
-    <p> A[(a + b)/2]xh</p>
-    <h3 class="dimatoins"> Please enter the base and height in cm </h3>
+    <p> V=lwh/3 </p>
+    <h3 class="dimatoins"> Please enter the dimatoins</h3>
     <br>
     <form action="answer.php" method="GET">
       <div class="mdl-textfield mdl-js-textfield" id="base-a">
-        <p class="base-a"> Base A</p>
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-a-of-trapizoid">
-        <label class="mdl-textfield__label" for="base-a-of-trapizoid"></label>
+        <p class="base-a"> Lenght</p>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="length-of-pyramid">
+        <label class="mdl-textfield__label" for="length-of-pyramid"></label>
         <span>mm</span>
         <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
       <div class="mdl-textfield mdl-js-textfield" id="base-b">
-        <p class="base-a"> Base B</p>
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="base-b-of-trapizoid">
-        <label class="mdl-textfield__label" for="base-b-of-trapizoid"></label>
+        <p class="base-a"> Width</p>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="width-of-pyramid">
+        <label class="mdl-textfield__label" for="width-of-pyramid"></label>
         <span>mm</span>
         <br>
         <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
       <div class="mdl-textfield mdl-js-textfield" id="height">
         <p class="base-a"> Height</p>
-        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-of-the-trapizoid">
-        <label class="mdl-textfield__label" for="height-of-the-trapizoid"></label>
+        <input class="mdl-textfield__input" type="text" pattern="-?[0-9]*(\.[0-9]+)?" name="height-of-pyramid">
+        <label class="mdl-textfield__label" for="height-of-pyramid"></label>
         <span>mm</span>
         <span class="mdl-textfield__error">Input is not a number!</span>
       </div>
@@ -69,7 +69,7 @@
 
   </div>
   <br>
-  <img class="Calculate" src="images/trapezoid.svg" alt="Formula of rectengle">
+  <img class="Calculate" src="images/pyramid.png" alt="Formula of rectengle">
 </body>
 
 </html>

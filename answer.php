@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8" />
-  <meta name="description" content="Area of Trapizoid  " />
+  <meta name="description" content="Volume of right rectangular pyramid  " />
   <meta name="keywords" content="mths, icd2o" />
   <meta name="author" content="Emre Guzel" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
@@ -18,7 +18,7 @@
   <link rel="icon" type="image/png" sizes="16x16" href="./favicon-16x16.png">
   <link rel="manifest" href="/site.webmanifest">
   <link rel="stylesheet" href="css/style.css">
-  <title>Area of Trapizoid </title>
+  <title>Volume of Right Rectangular Pyramid </title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
   <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
     <header class="mdl-layout__header">
       <div class="mdl-layout__header-row">
-        <span class="mdl-layout-title">Area of Trapizoid </span>
+        <span class="mdl-layout-title">Volume of Right Rectangular Pyramid </span>
       </div>
     </header>
     <main class="mdl-layout__content">
@@ -34,15 +34,15 @@
       </div>
       <br><br>
       <?php
-      $baseAOfTrapizoid = $_GET["base-a-of-trapizoid"];
-      $baseBOfTrapizoid = $_GET["base-b-of-trapizoid"];
-      $heightOfTheTrapizoid = $_GET["height-of-the-trapizoid"];
-      $area = ($baseAOfTrapizoid + $baseBOfTrapizoid) / 2 * $heightOfTheTrapizoid;
-      echo "If a trapezoid has A base = " . $baseAOfTrapizoid . " mm and the base B = " . $baseBOfTrapizoid . " mm, <br>";
-      echo "If a trapezoid has a height = " . $heightOfTheTrapizoid . " mm, then:<br>";
+      $lengthOfPyramid = $_GET["length-of-pyramid"];
+      $widthOfPyramid = $_GET["width-of-pyramid"];
+      $heightOfPyramid = $_GET["height-of-pyramid"];
+      $volume = ($lengthOfPyramid * $widthOfPyramid * $heightOfPyramid) / 3; 
+      echo "If a pyramid has lenght  = " . $lengthOfPyramid . " mm and the width = " . $widthOfPyramid . " mm, <br>";
+      echo "If a pyramid  has a height = " . $heightOfPyramid . " mm, then:<br>";
       echo "<br />";
       echo "<br />";
-      echo "The area of the triangle is " . $area . " mm².";
+      echo "The Volume of the pyramid is: " .round($volume) . " mm³ .";
       ?>
       <br /> <br>
       <div class="page-content-answer">
@@ -50,7 +50,7 @@
       </div>
       <br>
       <div class="Calculate-2">
-        <img src="./images/trapezoid.svg" alt="Calculation">
+        <img src="./images/pyramid.png" alt="Calculation">
       </div>
     </main>
 </body>
