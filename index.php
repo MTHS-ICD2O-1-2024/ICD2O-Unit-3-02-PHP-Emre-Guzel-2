@@ -65,7 +65,7 @@
         </button>
       </main>
     </form>
-    <p id="area">Area is: </p>
+    <p id="area">Volume is: </p>
 
   </div>
   <br>
